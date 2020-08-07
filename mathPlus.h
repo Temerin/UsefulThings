@@ -1,5 +1,5 @@
-#ifndef QMATHPLUS_H
-#define QMATHPLUS_H
+#ifndef MATHPLUS_H
+#define MATHPLUS_H
 
 #include <qmath.h> //Можно переделать библиотеку на обычный math, например
 
@@ -43,4 +43,4 @@ inline qreal linearInterpolation(qreal a, qreal fa, qreal b, qreal fb, qreal x)
     return fa + (x-a)*((fb-fa)/(b-a));
 }
 
-#endif // QMATHPLUS_H
+#endif // MATHPLUS_H
