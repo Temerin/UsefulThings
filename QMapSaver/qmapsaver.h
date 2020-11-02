@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QMap>
+#include <QStringList>
 
 class QMapSaver : public QObject
 {
@@ -11,6 +12,7 @@ public:
     explicit QMapSaver(QObject *parent = nullptr);
     bool saveMap(const QMap<QString,QVariant> &map, const QString &path);
     bool loadMap(QMap<QString,QVariant> &map, const QString &path);
+    QStringList findMapFiles();
 
 signals:
 
